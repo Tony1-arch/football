@@ -28,33 +28,37 @@
   gap: 3rem 2rem;
   justify-items: center;
 }
-.menu-item {
+.club-item {
+  line-height: 1.29;
+  background-color: rgb(225, 250, 250);
+  max-height: 200px;
   display: grid;
   gap: 1rem 2rem;
   max-width: 25rem;
 }
 .photo {
   object-fit: cover;
-  height: 200px;
+  max-height: 200px;
   width: 100%;
   border: 0.25rem solid #2c2891;
   border-radius: var(--radius);
   display: block;
 }
-.item-info header {
+.club-info header {
   display: flex;
   justify-content: space-between;
   border-bottom: 0.5px dotted var(--clr-grey-5);
 }
-.item-info h4 {
+.club-info h4 {
   margin-bottom: 0.5rem;
 }
 .price {
   color: #2c2891;
+  padding-right: 1rem;
 }
-.item-text {
-  margin-bottom: 0;
-  padding-top: 1rem;
+.club-text {
+  margin-bottom: 1.5rem;
+  
 }
 .title{
   display: flex;
@@ -67,7 +71,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .menu-item {
+  .club-item {
     grid-template-columns: 225px 1fr;
     gap: 0 1.25rem;
     max-width: 40rem;
